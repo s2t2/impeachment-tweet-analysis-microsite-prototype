@@ -114,7 +114,7 @@ var barWidth, chart, chartInset, degToRad, repaintGauge,
 
       return this.el.append('path')
           .attr('class', 'needle')
-          .attr('d', recalcPointerPos.call(this, 0.5)); // START IN THE MIDDLE!
+          .attr('d', recalcPointerPos.call(this, 0)); // PERCENTAGE WHERE THE NEEDLE WITH BRIEFLY START (0.5 IS MIDDLE)!
     };
 
     Needle.prototype.moveTo = function(perc) {
